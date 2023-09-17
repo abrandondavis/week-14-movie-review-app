@@ -1,3 +1,294 @@
+:root {
+  --star-color: white;
+  --nice-orange: #eb8f05;
+  --text-form-orange: #ffdba8;
+  --text-form-focus: #ffc97d;
+  --button-color: linear-gradient(160deg, rgba(222,222,222,0.4) 0%, rgba(222,222,222,0.4) 40%, rgba(170,170,170,0.4) 60%, rgba(170,170,170,0.4) 100%);
+  --old-button-color: #e7d9c4;
+}
+
+body {
+  background-color: #ddd;
+}
+
+
+.star {
+  color: var(--star-color);
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.star-static {
+  color: var(--star-color);
+  margin: 1px;
+}
+
+.star-fill {
+  color: var(--star-color);
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.star-fill-static {
+  color: var(--star-color);
+  margin: 1px;
+}
+
+
+/* --------------Movie Card Styles-------------------- */
+
+.movies-container {
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-details {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 4%;
+  text-align: center;
+  background: rgb(170,170,170);
+  background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(221,221,221,1) 40%, rgba(221,221,221,1) 60%, rgba(170,170,170,1) 100%);
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease-in-out;
+  /* Add a transition effect for the border color */
+  width: 350px;
+}
+
+/* Change the border color on hover */
+.movie-details:hover {
+  border-color: var(--nice-orange);
+}
+
+.movie-image {
+  width: 150px;
+  /* height: 200px; */
+  box-shadow: 0 0 7px #000;
+}
+
+.movie-title {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+
+/* ----------------Review Form Styles---------------------- */
+
+.review-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: solid 3px rgba(0, 0, 0, 0.4); */
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(70, 70, 70, 0.1);
+}
+
+#comment {
+  resize: none;
+  width: 16rem;
+  height: 5rem;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4), inset 0 0 1px 2px var(--nice-orange);
+  background-color: var(--text-form-orange);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#comment:focus {
+  outline: none;
+  background-color: var(--text-form-focus);
+
+}
+
+#name {
+  resize: none;
+  width: 12rem;
+  height: 1.5rem;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 1px 2px var(--nice-orange);
+  background-color: var(--text-form-orange);
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+
+#name:focus {
+  outline: none;
+  background-color: var(--text-form-focus);
+}
+
+label {
+  font-weight: 500;
+  padding-right: 2px;
+}
+
+#review-submit {
+  height: 25px;
+  width: 130px;
+  background: var(--button-color);
+  border-radius: 9% / 50%;
+  font-weight: 600;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 3px;
+
+  box-shadow: -2px -2px 3px 2px rgba(0, 0, 0, 0.4) inset,
+               2px  2px 3px 2px rgba(255,255,255,0.5) inset,
+               0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+#delete-review {
+  width: 90px;
+  height: 25px;
+  background-color: var(--button-color);
+  border-radius: 9% / 50%;
+  font-weight: 600;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: -2px -2px 3px 2px rgba(0, 0, 0, 0.4) inset,
+               2px  2px 3px 2px rgba(255,255,255,0.5) inset,
+               0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* ------------------Review Styles--------------------*/
+
+
+.review-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 9px 3px 3px 3px;
+  padding: 0 10px 10px 10px;
+  box-shadow: -1px -1px 2px 1px rgba(0, 0, 0, 0.4) inset,
+               1px  1px 2px 1px rgba(255,255,255,0.5) inset,
+               0 0 3px 0.5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.2);
+}
+
+.review {
+  width: 100%;
+}
+
+.review-list-container h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+#review-name {
+  text-align: left;
+  margin: 0;
+
+}
+
+#review-comment {
+  text-align: left;
+  margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+/* Navbar container */
+.navbar {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  /* Use Flexbox */
+  justify-content: space-between;
+  /* Distribute space between brand and links */
+  align-items: center;
+  /* Vertically align items to the center */
+  border-bottom: solid 6px var(--nice-orange);
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  justify-content: flex-start;
+  /* Push the brand to the left */
+}
+
+/* Navbar links styling */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Use Flexbox for the links */
+  align-items: center;
+  /* Vertically align links with the brand */
+  justify-content: flex-end;
+  /* Push the links to the right */
+}
+
+/* Navbar list items styling */
+.nav-item {
+  margin-right: 20px;
+}
+
+/* Navbar link styling */
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s; /* Apply transition to transform property */
+  display: inline-block; /* Ensures inline block layout */
+  vertical-align: middle; /* Vertically align text */
+  margin-left: 15px;
+}
+
+/* Navbar link hover effect */
+.nav-link:hover {
+  color: var(--nice-orange);
+  transform: scale(1.2); /* Scale the text on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Default React CSS */
+
 .App {
   text-align: center;
 }
@@ -32,6 +323,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

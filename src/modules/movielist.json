@@ -1,0 +1,53 @@
+{
+  "movie": [
+    {
+      "title": "The Fifth Element",
+      "year": 1997,
+      "rating": 4,
+      "synopsis": "In the 23rd century, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay.",
+      "image": "src/images/fifth_element.jpg"
+    },
+    {
+      "title": "Jurassic Park",
+      "year": 1993,
+      "rating": 5,
+      "synopsis": "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
+      "image": "src/images/jurassic_park.jpg"
+    },
+    {
+      "title": "Scream",
+      "year": 1996,
+      "rating": 4,
+      "synopsis": "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.",
+      "image": "src/images/scream.jpg"
+    },
+    {
+      "title": "Friday the 13th",
+      "year": 1980,
+      "rating": 4,
+      "synopsis": "A group of camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp where, years before, it was the site of a child's drowning and a grisly double murder.",
+      "image": "src/images/friday_the_13th.jpg"
+    },
+    {
+      "title": "Creature from the Black Lagoon",
+      "year": 1954,
+      "rating": 3,
+      "synopsis": "A strange prehistoric beast lurks in the depths of the Amazonian jungle. A group of scientists try to capture the animal and bring it back to civilization for study.",
+      "image": "src/images/creature_black_lagoon.jpg"
+    },
+    {
+      "title": "The Exorcist",
+      "year": 1973,
+      "rating": 5,
+      "synopsis": "When a teenage girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.",
+      "image": "src/images/the_exorcist.jpg"
+    },
+    {
+      "title": "The Book of Eli",
+      "year": 2010,
+      "rating": 4,
+      "synopsis": "In a post-apocalyptic wasteland, a lone drifter with a mysterious book sets out on a quest to protect it from those who would use its secrets for evil.",
+      "image": "src/images/book_of_eli.jpg"
+    }
+  ]
+}
